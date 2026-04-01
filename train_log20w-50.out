@@ -1,0 +1,92 @@
+nohup: ignoring input
+Evaluating initial baseline...
+Initial Baseline Avg Mksp: 18.96
+Epoch 1: Loss 1337.0662 | Train Mksp 11.35 | Val Mksp 9.91
+  >>> New Best Model Saved! (Val Mksp: 9.91)
+Updating Baseline...
+Epoch 2: Loss -38.4504 | Train Mksp 10.24 | Val Mksp 9.85
+  >>> New Best Model Saved! (Val Mksp: 9.85)
+Epoch 3: Loss -27.4359 | Train Mksp 10.17 | Val Mksp 9.84
+  >>> New Best Model Saved! (Val Mksp: 9.84)
+Epoch 4: Loss -16.5866 | Train Mksp 10.10 | Val Mksp 9.83
+  >>> New Best Model Saved! (Val Mksp: 9.83)
+Updating Baseline...
+Epoch 5: Loss -27.7116 | Train Mksp 10.12 | Val Mksp 9.81
+  >>> New Best Model Saved! (Val Mksp: 9.81)
+Epoch 6: Loss -26.6718 | Train Mksp 10.11 | Val Mksp 9.81
+  >>> New Best Model Saved! (Val Mksp: 9.81)
+Epoch 7: Loss -24.6053 | Train Mksp 10.10 | Val Mksp 9.83
+Epoch 8: Loss -24.6006 | Train Mksp 10.10 | Val Mksp 9.84
+Epoch 9: Loss -21.3024 | Train Mksp 10.08 | Val Mksp 9.81
+Epoch 10: Loss -19.8546 | Train Mksp 10.07 | Val Mksp 9.81
+Epoch 11: Loss -22.4860 | Train Mksp 10.09 | Val Mksp 9.81
+Epoch 12: Loss -21.7660 | Train Mksp 10.08 | Val Mksp 9.81
+Epoch 13: Loss -21.0369 | Train Mksp 10.08 | Val Mksp 9.85
+Epoch 14: Loss -21.2162 | Train Mksp 10.08 | Val Mksp 9.80
+  >>> New Best Model Saved! (Val Mksp: 9.80)
+Epoch 15: Loss -25.6112 | Train Mksp 10.11 | Val Mksp 9.85
+Epoch 16: Loss -21.1622 | Train Mksp 10.08 | Val Mksp 9.85
+Epoch 17: Loss -18.0632 | Train Mksp 10.06 | Val Mksp 9.81
+Epoch 18: Loss -21.3477 | Train Mksp 10.08 | Val Mksp 9.82
+Epoch 19: Loss -22.3657 | Train Mksp 10.09 | Val Mksp 9.81
+Epoch 20: Loss -22.2429 | Train Mksp 10.09 | Val Mksp 9.84
+Epoch 21: Loss -17.7173 | Train Mksp 10.06 | Val Mksp 9.82
+Epoch 22: Loss -15.7674 | Train Mksp 10.05 | Val Mksp 9.84
+Epoch 23: Loss -17.1268 | Train Mksp 10.06 | Val Mksp 9.82
+Epoch 24: Loss -16.5065 | Train Mksp 10.05 | Val Mksp 9.80
+Epoch 25: Loss -17.6413 | Train Mksp 10.06 | Val Mksp 9.81
+Epoch 26: Loss -15.5303 | Train Mksp 10.04 | Val Mksp 9.81
+Epoch 27: Loss -16.1432 | Train Mksp 10.05 | Val Mksp 9.79
+  >>> New Best Model Saved! (Val Mksp: 9.79)
+Epoch 28: Loss -16.5551 | Train Mksp 10.05 | Val Mksp 9.82
+Epoch 29: Loss -14.1833 | Train Mksp 10.04 | Val Mksp 9.81
+Epoch 30: Loss -16.5227 | Train Mksp 10.05 | Val Mksp 9.84
+Epoch 31: Loss -15.2723 | Train Mksp 10.04 | Val Mksp 9.81
+Epoch 32: Loss -14.9394 | Train Mksp 10.04 | Val Mksp 9.81
+Epoch 33: Loss -16.8093 | Train Mksp 10.04 | Val Mksp 9.80
+Epoch 34: Loss -1157.4861 | Train Mksp 15.53 | Val Mksp 39.69
+Epoch 35: Loss -1268.2256 | Train Mksp 16.06 | Val Mksp 39.69
+Epoch 36: Loss -1266.2490 | Train Mksp 16.05 | Val Mksp 39.69
+Epoch 37: Loss -1267.8535 | Train Mksp 16.07 | Val Mksp 39.69
+Epoch 38: Loss -1267.1916 | Train Mksp 16.06 | Val Mksp 39.69
+Epoch 39: Loss -1266.5345 | Train Mksp 16.06 | Val Mksp 39.69
+Epoch 40: Loss -1266.2950 | Train Mksp 16.05 | Val Mksp 39.69
+Epoch 41: Loss -1267.0567 | Train Mksp 16.06 | Val Mksp 39.69
+Epoch 42: Loss -1268.3112 | Train Mksp 16.06 | Val Mksp 39.69
+Epoch 43: Loss -1267.9624 | Train Mksp 16.06 | Val Mksp 39.69
+Epoch 44: Loss -1268.4593 | Train Mksp 16.07 | Val Mksp 39.69
+Epoch 45: Loss -1268.7807 | Train Mksp 16.07 | Val Mksp 39.69
+Epoch 46: Loss -1267.2978 | Train Mksp 16.06 | Val Mksp 39.69
+Epoch 47: Loss -1268.2135 | Train Mksp 16.07 | Val Mksp 39.69
+Epoch 48: Loss -1267.3967 | Train Mksp 16.06 | Val Mksp 39.69
+Epoch 49: Loss -1266.8715 | Train Mksp 16.06 | Val Mksp 39.69
+Epoch 50: Loss -1268.2906 | Train Mksp 16.07 | Val Mksp 39.69
+Training finished. Plotting curves...
+Traceback (most recent call last):
+  File "/home/yifan/hang/fjsp/train.py", line 145, in <module>
+    main()
+  File "/home/yifan/hang/fjsp/train.py", line 141, in main
+    plot_learning_curves(history_loss, history_train_mksp, history_val_mksp)
+  File "/home/yifan/hang/fjsp/plot.py", line 46, in plot_learning_curves
+    plt.savefig(save_path, dpi=300)
+  File "/home/yifan/hang/venvs/drl_fjsp/lib/python3.12/site-packages/matplotlib/pyplot.py", line 1228, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yifan/hang/venvs/drl_fjsp/lib/python3.12/site-packages/matplotlib/figure.py", line 3395, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/yifan/hang/venvs/drl_fjsp/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2204, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/yifan/hang/venvs/drl_fjsp/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2054, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/yifan/hang/venvs/drl_fjsp/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 496, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/yifan/hang/venvs/drl_fjsp/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 445, in _print_pil
+    mpl.image.imsave(
+  File "/home/yifan/hang/venvs/drl_fjsp/lib/python3.12/site-packages/matplotlib/image.py", line 1676, in imsave
+    image.save(fname, **pil_kwargs)
+  File "/home/yifan/hang/venvs/drl_fjsp/lib/python3.12/site-packages/PIL/Image.py", line 2436, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './draw_loss/lr_cvs_128_500_0322_2107.png'
